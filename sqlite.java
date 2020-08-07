@@ -88,14 +88,11 @@ public class sqlite<cursor> extends SQLiteOpenHelper
         db=this.getReadableDatabase();
         Cursor cursor=db.rawQuery("SELECT email FROM EMP",null);
         String[] s=new String[cursor.getCount()];
-//        System.out.println("number-----------------------"+cursor.getString(0));
         while (cursor.moveToNext())
         {
-//            System.out.println("number-----------------------"+cursor.getString(0));
             s[i]=cursor.getString(0);
             i++;
         }
-        System.out.println("hiii--------"+ Arrays.toString(s));
         return s;
     }
 }
