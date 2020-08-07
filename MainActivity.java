@@ -70,10 +70,6 @@ public class MainActivity extends AppCompatActivity
         cpassword = (EditText)findViewById(R.id.cpassword);
         button = (Button)findViewById(R.id.button);
         logi = (Button)findViewById(R.id.logi);
-
-//        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,e);
-//        email.setThreshold(1);
-//        email.setAdapter(adapter);
     }
     public void showAlert(View v)
     {
@@ -176,23 +172,9 @@ public class MainActivity extends AppCompatActivity
     {
         int leng = pass.length();
         if(leng>5 && leng<32)
-        {
-//            if(pass.matches("[a-z]"))
-//                count++;
-//            if(pass.matches("[A-Z]"))
-//                count++;
-//            if(pass.matches("[0-9]"))
-//                count++;
-//            if(pass.matches("[!~$@#%^&*]"))
-//                count++;
             return Boolean.TRUE;
-        }
         else
             return Boolean.FALSE;
-//        if (count>3)
-//            return Boolean.TRUE;
-//        else
-//            return Boolean.FALSE;
     }
     public void lin(View view)
     {
